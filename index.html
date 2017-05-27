@@ -1,0 +1,466 @@
+<!doctype html>
+<html>
+ <head>
+ 	<title>Spring Fest-Log In or Sign Up</title>
+ 	<style type="text/css">
+ 	 #img1 { 
+         position: absolute;
+         margin-top: 0.5%;
+         margin-left: 8%;
+         display: inline-block;
+      }
+body {
+      font-family: Helvetica, sans-serif;      
+      height: 100%;
+      width:100%;
+
+     }
+#Middle {  
+          background: linear-gradient(white, #d3d8e8);
+        }
+#head_bar{position: absolute;
+	        width: 100%;
+          height:86px;
+          background-color:#3b5998 ;
+          color: white;
+          margin-top: -8px;
+          margin-left: -8px;
+        }
+#login { 
+        position: absolute;
+        display: inline-block;
+        width: 392px;
+        height: 64.67px;
+        margin-left: 57.1%;
+        margin-top: 0.95%;
+        font-size: 13px;       
+        } 
+table tr td { border-collapse: collapse;
+              padding-left: 11.5px;
+            }
+#Email_box  { 
+              width: 148px; 
+            }
+#forg { 
+        color:  #9cb4d8;
+        text-decoration: none; 
+      }
+#forg:hover { 
+              text-decoration: underline;
+            }
+#log_but { 
+           font-size: 13px;
+           cursor: pointer;
+           color: white;
+           width: 50px;
+           padding: 1.5px 6px;          
+           border-radius: 2.5px;
+           font-weight: bold;          
+           background-color: #4267b2;
+           border: 1px solid #29487d;
+           text-align: center;
+           vertical-align: top; 
+           line-height: 18px; 
+
+        }
+#log_but:hover { 
+                 background-color:#3b5998; 
+               }
+#para1 {
+          position:absolute;
+          margin-left: 12.5%;
+          margin-top: 9%;
+          color: #0e385f;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 25px;
+        }
+#first_header { color: black;
+                font-weight: bold;
+                position: absolute;
+                margin-left: 55.7%;
+                margin-top: 7.3%;
+                font-size: 37px;
+              }
+#second_header { 
+                 position: absolute;
+                 margin-left: 55.7%; 
+                 margin-top: 11.3%;
+                 font-size: 18px;
+               }
+#first_name {  
+              position: absolute;
+              margin-left: 55.7%; 
+              margin-top: 14.5%;
+              border: 1px solid #B0C4DE;
+              border-radius: 4px;
+              width: 14.3vw;
+              height: 2.5vw;
+              font-size: 18px;
+            }
+#Surname { 
+          position: absolute;
+          margin-left: 71%; 
+          margin-top: 14.5%;
+          border: 1px solid #B0C4DE;
+          border-radius: 4px;
+          width: 14.3vw;
+          height: 2.5vw; 
+          font-size: 18px;
+          }
+#Mob_email {
+            position: absolute;
+            margin-left: 55.7%; 
+            margin-top: 18.2%;
+            border: 1px solid #B0C4DE;
+            border-radius: 4px;
+            width: 29.7vw;
+            height: 2.5vw; 
+            font-size: 18px;
+            }
+#New_pass  { 
+            position: absolute;
+            margin-left: 55.7%; 
+            margin-top: 21.8%;
+            border: 1px solid #B0C4DE;
+            border-radius: 4px;
+            width: 29.7vw;
+            height: 2.5vw; 
+            font-size: 18px;
+           }
+#birthpara {
+             position: absolute;
+             margin-left: 55.7%; 
+             margin-top: 26.4%;
+             font-size: 18px;
+            }
+#Birth_Date {
+              position: absolute;
+              margin-left: 55.7%; 
+              margin-top: 28.5%;
+              font-size: 14px;
+              width:4.25vw;  
+              height: 28px;
+            }
+#Birth_Month {
+              position: absolute;
+              margin-left: 60%; 
+              margin-top: 28.5%;
+              font-size: 14px;
+              width:5.15vw;  
+              height: 28px;
+            }
+#Birth_Year {
+              position: absolute;
+              margin-left: 65.2%; 
+              margin-top: 28.5%;
+              font-size: 14px;
+              width:5vw;  
+              height: 28px;
+            }  
+#info1 {
+         position: absolute;
+         margin-left: 70.5%; 
+         margin-top: 28.7%;
+         font-size: 11.5px;
+         color: #365899;
+       }  
+#info1 a { 
+          text-decoration: none;
+         }
+#info1 a:hover { 
+                 text-decoration: underline;}       
+#female { 
+          position: absolute;
+          margin-left: 56.4%; 
+          margin-top: 32%;
+        }
+#female_ { 
+          position: absolute;
+          margin-left: 57.8%; 
+          margin-top: 32%;
+          font-size: 18px;
+         }
+#male { 
+          position: absolute;
+          margin-left: 64%; 
+          margin-top: 32%;
+        }
+#male_ { 
+          position: absolute;
+          margin-left: 65.4%; 
+          margin-top: 32%;
+          font-size: 18px;
+        }
+#para2 { 
+          position: absolute;
+          margin-left: 55.7%; 
+          margin-top: 34.7%;
+          font-size: 10px;
+          font-weight: bold;
+          color:grey; 
+          line-height: 14px;
+       }
+#para2 a { 
+           text-decoration: none;
+           color: #365899;
+         }
+#para2 a:hover { 
+                text-decoration: underline;
+               }
+#create_button {
+                  position: absolute;
+                  margin-left: 55.7%; 
+                  margin-top: 40.3%;
+                  background-color: #578843;
+                  width: 15.2vw;
+                  border-radius: 6px;
+                  height: 3.1vw; 
+                  font-size: 20px;
+                  font-weight: bolder;
+                  color: white;
+                  cursor: pointer;
+                }
+#create_button:hover { background-color: #69a74e;}
+#para3  { 
+          position: absolute;
+          margin-left: 55.7%; 
+          margin-top: 44.7%;
+          font-size:13.5px;
+          font-weight: bold;
+          color: grey;
+         }
+#para3 a {
+           text-decoration: none;
+           color: #365899;
+         }
+#para3 a:hover {  
+                text-decoration: underline;
+              }
+#footer_table {
+                position: absolute;
+                margin-left: 11%; 
+                margin-top: 50%;
+                font-size: 12px;
+                color: #365899;
+              }
+#footer_table a { 
+                 text-decoration: none;
+                 padding: 2px 3px;
+                }
+#footer_table a:hover { 
+                         text-decoration: underline;
+                      }
+#footer_copyright { 
+                    color: grey;
+                    position: absolute;
+                    margin-left: 12%; 
+                    margin-top: 55%;
+                    font-size: 12px;
+                    padding-bottom: 30px;
+                  }
+
+ 	</style>
+ </head>
+ <body>
+	<div id="Middle">
+	 	    <div id="head_bar">
+		 	   <div id="img1">
+		 	     <image src="2.png" width="300px"; height="90px"; />
+		 	   </div>
+		 	   <div id="login">
+		 	   	   <form>
+		 	   	   	<table cellspacing="3px;" id="login_table">
+		 	   	   	  <tbody>
+		 	   	   	  	<tr>
+		 	   	   	  		<td>Email or Phone</td>
+		 	   	   	  		<td>Password</td>
+		 	   	   	  	</tr>
+		 	   	   	  	<tr>
+		 	   	   	  		<td><input name="Email or Phone" id="Email_box" /></td>
+		 	   	   	  		<td><input name="Password" id="Email_box" /></td>
+		 	   	   	  		<td><a href=""><input type="submit" value="Log In " id="log_but"></a></td>   	   	  	
+		 	   	   	  	</tr>
+		 	   	   	    <tr>
+		 	   	   	    	<td></td>
+		 	   	   	    	<td><a href=""><div id="forg">Forgotten account?</div></a></td>
+		 	   	   	    </tr>	
+		 	   	   	  </tbody>
+		 	   	   	</table>
+		 	   	   </form>
+		        </div>
+	 	    </div>
+	    <p id="para1">Spring Fest helps you connect and share with the <br /> people in your life.</p>
+	 	<image src="1.png" style="position:absolute; top:28%; left:13%; width:550px; height:200px; " border="0"/>
+	 	<h1 id="first_header"> Create an account</h1>
+	 	<p id="second_header">It's free and always will be.</p>
+	 	<input id="first_name" name="first name" placeholder="First name" />
+	 	<input id="Surname" name="Surname" placeholder="Surname" />
+	 	<input id="Mob_email" name="Mobile and Email Address" placeholder="Mobile and Email Address" />
+	 	<input id="New_pass" name="New Password" placeholder="New Password" />
+	 	<p id="birthpara"> Birthday </p>
+	    <select name="Day" id="Birth_Date">
+			<option value="0" selected="1">Day</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">1</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>    		
+	    </select>
+	    <select name="Month" id="Birth_Month">
+			<option value="0" selected="1">Month</option>
+			<option value="1">Jan</option>
+			<option value="2">Feb</option>
+			<option value="3">Mar</option>
+			<option value="4">Apr</option>
+			<option value="5">May</option>
+			<option value="6">Jun</option>
+			<option value="7">Jul</option>
+			<option value="8">Aug</option>
+			<option value="9">Sept</option>
+			<option value="10">Oct</option>
+			<option value="11">Nov</option>
+			<option value="12">Dec</option>
+		</select>
+		<select name="Year" id="Birth_Year">
+			<option value="0" selected="1">Year</option>
+			<option value="2017">2017</option>
+			<option value="2016">2016</option>
+			<option value="2015">2015</option>
+			<option value="2014">2014</option>
+			<option value="2013">2013</option>
+			<option value="2012">2012</option>
+			<option value="2011">2011</option>
+			<option value="2010">2010</option>
+			<option value="2009">2009</option>
+			<option value="2008">2008</option>
+			<option value="2007">2007</option>
+			<option value="2006">2006</option>
+			<option value="2005">2005</option>
+			<option value="2004">2004</option>
+			<option value="2003">2003</option>
+			<option value="2002">2002</option>
+			<option value="2001">2001</option>
+			<option value="2000">2000</option>
+			<option value="1999">1999</option>
+			<option value="1998">1998</option>
+			<option value="1997">1997</option>
+			<option value="1996">1996</option>
+			<option value="1995">1995</option>
+			<option value="1994">1994</option>
+			<option value="1993">1993</option>
+			<option value="1992">1992</option>
+			<option value="1991">1991</option>
+			<option value="1990">1990</option>
+			<option value="1989">1989</option>
+			<option value="1988">1988</option>
+			<option value="1987">1987</option>
+			<option value="1986">1986</option>
+			<option value="1985">1985</option>
+			<option value="1984">1984</option>
+			<option value="1983">1983</option>
+			<option value="1982">1982</option>
+			<option value="1981">1981</option>
+			<option value="1980">1980</option>
+			<option value="1979">1979</option>
+			<option value="1978">1978</option>
+			<option value="1977">1977</option>
+			<option value="1976">1976</option>
+			<option value="1975">1975</option>
+			<option value="1974">1974</option>
+			<option value="1973">1973</option>
+			<option value="1972">1972</option>
+			<option value="1971">1971</option>
+			<option value="1970">1970</option>
+			<option value="1969">1969</option>
+			<option value="1968">1968</option>
+			<option value="1967">1967</option>
+			<option value="1966">1966</option>
+			<option value="1965">1965</option>
+			<option value="1964">1964</option>
+			<option value="1963">1963</option>
+			<option value="1962">1962</option>
+			<option value="1961">1961</option>
+			<option value="1960">1960</option>
+			<option value="1959">1959</option>
+			<option value="1958">1958</option>
+			<option value="1958">1988</option>
+			<option value="1957">1957</option>     		
+	    </select>
+	    <p id="info1"><a href="">Why do I need to provide my <br /> date of birth?</a></p>
+	 	<input type="radio" id="female" name="sex" value="Female" />
+	 	<div id="female_">Female</div>
+	 	<input type="radio" id="male" name="sex" value="Male"/>
+	 	<div id="male_">Male</div>
+	 	<p id="para2">By clicking Create an account, you agree to our <a href="" >Terms</a> and <br/>confirm that you have read our <a href="">Data Policy</a>, including our <a href="">Cookie <br/>Use Policy</a>. You may receive SMS message notifications from<br /> Facebook and can opt out at any time</p>
+	 	<input type="submit" value="Create an account" id="create_button" />\
+	 	<p id="para3"><a href="">Create a page</a> for celebrity, band or business.</p>
+	</div>
+	 	<div id="footer_table">
+	 		<table>
+	 			<tbody>
+	 				<tr>
+	 					<td><a href="">Sign Up</a></td>
+	 					<td><a href="">Log In</a></td>
+	 					<td><a href="">Messenger</a></td>
+	 					<td><a href="">Facebook Lite</a></td>
+	 					<td><a href="">Mobile</a></td>
+	 					<td><a href="">Find Friends</a></td>
+	 					<td><a href="">People</a></td>
+	 					<td><a href="">Pages</a></td>
+	 					<td><a href="">Places</a></td>
+	 					<td><a href="">Games</a></td>
+	 					<td><a href="">Locations</a></td>
+	 				</tr>
+	 			    <tr>
+	 			    	<td><a href="">Celebrities</a></td>
+	 					<td><a href="">Marketplace</a></td>
+	 					<td><a href="">Groups</a></td>
+	 					<td><a href="">Recipes</a></td>
+	 					<td><a href="">Moments</a></td>
+	 					<td><a href="">Instagram</a></td>
+	 					<td><a href="">About</a></td>
+	 					<td><a href="">Creat Advert</a></td>
+	 					<td><a href="">Create Page</a></td>
+	 					<td><a href="">Developers</a></td>
+	 					<td><a href="">Careers</a></td>
+	 			    </tr>
+	 			    <tr>
+	 			    	<td><a href="">Priacy</a></td>
+	 					<td><a href="">Cookies</a></td>
+	 					<td><a href="">AdChoices</a></td>
+	 					<td><a href="">Terms</a></td>
+	 					<td><a href="">Help</a></td>
+	 			    </tr>
+	 			</tbody>
+	 		</table>
+	    </div>
+	    <p id="footer_copyright">Adarsh Singh ©2017</p>
+ </body>
+</html>
